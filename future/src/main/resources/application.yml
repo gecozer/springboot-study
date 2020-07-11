@@ -1,12 +1,14 @@
 server:
     port: 80
 
-thymeleaf:
-    mode: HTML5
-    encoding: UTF-8
-    servlet:
-        content-type: text/html
 
 spring:
+    thymeleaf:
+        mode: HTML5
+        encoding: UTF-8
+        servlet:
+            content-type: text/html
     resources:
         static-locations: classpath:/templates/,classpath:/static/
+    mvc:
+        static-path-pattern: /static/**
