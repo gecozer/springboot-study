@@ -29,4 +29,9 @@ public class Index {
     public String about(){
         return "about";
     }
+
+    @RequestMapping("/details")
+    public String details(){
+        return "details";
+    }
 }
