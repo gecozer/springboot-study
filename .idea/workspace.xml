@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d00ed41-e5e2-49f1-b7c1-3797c2650288" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/future/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/future/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/future/src/main/resources/templates/album.html" beforeDir="false" afterPath="$PROJECT_DIR$/future/src/main/resources/templates/album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/future/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/future/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/future/src/main/resources/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/future/src/main/resources/templates/movie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/future/src/main/resources/templates/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/future/src/main/resources/templates/music.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/future/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/future/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +166,7 @@
       <workItem from="1594175552242" duration="580000" />
       <workItem from="1594214240834" duration="598000" />
       <workItem from="1594265398844" duration="590000" />
-      <workItem from="1594465140996" duration="12827000" />
+      <workItem from="1594465140996" duration="13066000" />
     </task>
     <task id="LOCAL-00001" summary="ignore修改">
       <created>1593751395795</created>
@@ -215,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594521356106</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ignore修改">
+      <created>1594563586753</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594563586754</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,10 +276,10 @@
       <screen x="0" y="23" width="1876" height="1057" />
     </state>
     <state x="676" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1876.1057@0.23.1876.1057" timestamp="1594465231535" />
-    <state x="521" y="155" key="CommitChangelistDialog2" timestamp="1594563557902">
+    <state x="521" y="155" key="CommitChangelistDialog2" timestamp="1594563584965">
       <screen x="0" y="23" width="1876" height="1057" />
     </state>
-    <state x="521" y="155" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.1876.1057@0.23.1876.1057" timestamp="1594563557902" />
+    <state x="521" y="155" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.1876.1057@0.23.1876.1057" timestamp="1594563584965" />
     <state x="521" y="155" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.1877.1057@0.23.1877.1057" timestamp="1593753027439" />
     <state x="521" y="155" key="CommitChangelistDialog2/-1440.23.1440.877/0.23.1878.1057@0.23.1878.1057" timestamp="1593751404676" />
     <state width="1834" height="253" key="GridCell.Tab.0.bottom" timestamp="1594563560414">
@@ -368,10 +370,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="208" y="43" key="SettingsEditor/0.23.1440.877/1440.23.1558.877@0.23.1440.877" timestamp="1590133729235" />
-    <state x="538" y="291" key="Vcs.Push.Dialog.v2" timestamp="1594521360218">
+    <state x="538" y="291" key="Vcs.Push.Dialog.v2" timestamp="1594563590512">
       <screen x="0" y="23" width="1876" height="1057" />
     </state>
-    <state x="538" y="291" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.1876.1057@0.23.1876.1057" timestamp="1594521360218" />
+    <state x="538" y="291" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.1876.1057@0.23.1876.1057" timestamp="1594563590512" />
     <state x="538" y="291" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.1877.1057@0.23.1877.1057" timestamp="1593753033279" />
     <state x="538" y="291" key="Vcs.Push.Dialog.v2/-1440.23.1440.877/0.23.1878.1057@0.23.1878.1057" timestamp="1593751409994" />
     <state x="520" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1594465144586">
