@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-boot-shiro-ehcache:war">
+    <output-path>$PROJECT_DIR$/spring-boot-shiro-ehcache/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-boot-shiro-ehcache</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-boot-shiro-ehcache-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="spring-boot-shiro-ehcache:war exploded" />
+    </root>
+  </artifact>
+</component>

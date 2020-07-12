@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/future/future.iml" filepath="$PROJECT_DIR$/future/future.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-devtools/spring-boot-devtools.iml" filepath="$PROJECT_DIR$/spring-boot-devtools/spring-boot-devtools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-druid/spring-boot-druid.iml" filepath="$PROJECT_DIR$/spring-boot-druid/spring-boot-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-ehcache/spring-boot-ehcache.iml" filepath="$PROJECT_DIR$/spring-boot-ehcache/spring-boot-ehcache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-env/spring-boot-env.iml" filepath="$PROJECT_DIR$/spring-boot-env/spring-boot-env.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-fastjson/spring-boot-fastjson.iml" filepath="$PROJECT_DIR$/spring-boot-fastjson/spring-boot-fastjson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jsp/spring-boot-jsp.iml" filepath="$PROJECT_DIR$/spring-boot-jsp/spring-boot-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jwt/spring-boot-jwt.iml" filepath="$PROJECT_DIR$/spring-boot-jwt/spring-boot-jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mapper4/spring-boot-mapper4.iml" filepath="$PROJECT_DIR$/spring-boot-mapper4/spring-boot-mapper4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-generator/spring-boot-mybatis-generator.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-generator/spring-boot-mybatis-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-generator-mysql/spring-boot-mybatis-generator-mysql.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-generator-mysql/spring-boot-mybatis-generator-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-pagehelper/spring-boot-pagehelper.iml" filepath="$PROJECT_DIR$/spring-boot-pagehelper/spring-boot-pagehelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-properties/spring-boot-properties.iml" filepath="$PROJECT_DIR$/spring-boot-properties/spring-boot-properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-quartz/spring-boot-quartz.iml" filepath="$PROJECT_DIR$/spring-boot-quartz/spring-boot-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-quartz-db/spring-boot-quartz-db.iml" filepath="$PROJECT_DIR$/spring-boot-quartz-db/spring-boot-quartz-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-scheduling/spring-boot-scheduling.iml" filepath="$PROJECT_DIR$/spring-boot-scheduling/spring-boot-scheduling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-shiro/spring-boot-shiro.iml" filepath="$PROJECT_DIR$/spring-boot-shiro/spring-boot-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-shiro-ehcache/spring-boot-shiro-ehcache.iml" filepath="$PROJECT_DIR$/spring-boot-shiro-ehcache/spring-boot-shiro-ehcache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-shiro-ehcache-shiro/spring-boot-shiro-ehcache-shiro.iml" filepath="$PROJECT_DIR$/spring-boot-shiro-ehcache-shiro/spring-boot-shiro-ehcache-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-study.iml" filepath="$PROJECT_DIR$/spring-boot-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-upload/spring-boot-upload.iml" filepath="$PROJECT_DIR$/spring-boot-upload/spring-boot-upload.iml" />
+    </modules>
+  </component>
+</project>
