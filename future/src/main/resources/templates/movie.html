@@ -11,8 +11,29 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
+  <link rel="stylesheet" type="text/css" href="../static/res/bubble/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../static/res/bubble/css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="../static/res/bubble/css/component.css" />
+  <![endif]-->
 </head>
+<style>
+  h3{
+    color: #00CCFF;
+  }
+  p{
+    color: #00CCFF;
+  }
+  h1{
+    margin: 0;
+  }
+</style>
 <body>
+<div class="container demo-2"  style="position:absolute;z-index:-2">
+  <div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+  </div>
+</div>
+<div id="hq">
   <div class="header">
     <div class="menu-btn">
       <div class="menu"></div>
@@ -132,15 +153,6 @@
                     <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
                   </div>
                 </div>
-                <div class="cont">
-                  <div class="img">
-                    <img src="../static/res/img/header.png" alt="">
-                  </div>
-                  <div class="text">
-                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
-                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
-                  </div>
-                </div>
               </div>
           </div>
         </div>
@@ -163,22 +175,23 @@
       </div>
     </div>
   </script>
-  <div class="footer-wrap">
-    <div class="footer w1000">
-      <div class="qrcode">
-        <img src="../static/res/img/erweima.jpg">
-      </div>
-      <div class="practice-mode">
-        <img src="../static/res/img/down_img.jpg">
-        <div class="text">
-          <h4 class="title">我的联系方式</h4>
-          <p>微信<span class="WeChat">1234567890</span></p>
-          <p>手机<span class="iphone">1234567890</span></p>
-          <p>邮箱<span class="email">1234567890@qq.com</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!--  <div class="footer-wrap">-->
+<!--    <div class="footer w1000">-->
+<!--      <div class="qrcode">-->
+<!--        <img src="../static/res/img/erweima.jpg">-->
+<!--      </div>-->
+<!--      <div class="practice-mode">-->
+<!--        <img src="../static/res/img/down_img.jpg">-->
+<!--        <div class="text">-->
+<!--          <h4 class="title">我的联系方式</h4>-->
+<!--          <p>微信<span class="WeChat">1234567890</span></p>-->
+<!--          <p>手机<span class="iphone">1234567890</span></p>-->
+<!--          <p>邮箱<span class="email">1234567890@qq.com</span></p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+</div>
   <script type="text/javascript" src="../static/res/layui/layui.js"></script>
   <script type="text/javascript">
    layui.config({
@@ -192,6 +205,22 @@
       menu.init();
       menu.submit()
     })
+  </script>
+  <script>
+    var canvas1 = document.getElementById('demo-canvas');
+    var context = canvas1.getContext('2d');
+    //初始化的树
+    // drawtree(context, 300, 700, 200, -Math.PI / 2, 12, 12);
+    //context.fill();
+    document.getElementById('hq').style.backgroundImage = 'url("' + context.canvas.toDataURL() + '")';
+  </script>
+  <script src="../static/res/bubble/js/rAF.js"></script>
+  <script src="../static/res/bubble/js/demo-2.js"></script>
+  <script src="http://www.yyyweb.com/demo/common/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    !function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);
+
   </script>
 </body>
 </html>

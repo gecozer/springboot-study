@@ -170,7 +170,7 @@ body{font: 14px 宋体 Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-se
 
 
 /*about*/
-.about-content{background: #faf8fb;}
+/*.about-content{background: #faf8fb;}*/
 .about-content .item{padding-bottom: 100px;}
 .about-content .item h3{font-size: 24px; color: #3f2863; line-height: 100px;}
 .about-content .item.info .cont{overflow: hidden;}
