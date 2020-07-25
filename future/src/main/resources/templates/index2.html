@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <meta name="description" content="Examples for creative website header animations using Canvas and JavaScript"/>
+    <meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript"/>
+    <meta name="author" content="Codrops"/>
+    <link rel="shortcut icon" href="../static/res/bubble/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/res/bubble/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/res/bubble/css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/res/bubble/css/component.css"/>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'> -->
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../static/res/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../static/res/css/main.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script type="text/javascript" src="../static/res/layui/layui.js"></script>
+</head>
+<style>
+    h3{
+        color: #00CCFF;
+    }
+    p{
+        color: #00CCFF;
+        -webkit-line-clamp: initial;
+    }
+    #music {
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        background: url(../static/res/audio/image/一月，银装轻舞-紫竹笛韵.jpg) no-repeat;
+        margin: 20px auto;
+        position: relative;
+        background-size: cover;
+        text-align: center;
+        right: -600px;
+    }
+    #container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        background:rgba(255,255,255,0.6);
+    }
+    /*实现背景图片透明，内容不透明*/
+
+    #musicImg {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+    }
+    audio {
+        display: block;
+        margin: 20px auto;
+    }
+    #musicName {
+        padding-top: 10px;
+        line-height: 30px;
+        color: #cc1b1b;
+    }
+    .btn>button {
+        width: 60px;
+        height: 30px;
+        border-radius: 10px;
+        background: skyblue;
+    }
+</style>
+<body>
+<div class="container demo-2" style="position:absolute;z-index:-2">
+    <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+    </div>
+</div>
+</div>
+<div id="hq">
+    <div class="header">
+        <div class="menu-btn">
+            <div class="menu"></div>
+        </div>
+        <h1 class="logo">
+            <a href="/index2">
+                <span>为爱而生</span>
+                <img src="../static/res/img/logo.png">
+            </a>
+        </h1>
+        <div class="nav">
+            <a href="/index2" class="active">书籍</a>
+            <a href="/music">音乐</a>
+            <a href="/movie">电影</a>
+            <a href="/album">相册</a>
+            <a href="/about">关于</a>
+        </div>
+        <ul class="layui-nav header-down-nav">
+            <li class="layui-nav-item"><a href="/index2" class="active">书籍</a></li>
+            <li class="layui-nav-item"><a href="/music">音乐</a></li>
+            <li class="layui-nav-item"><a href="/movie">电影</a></li>
+            <li class="layui-nav-item"><a href="/album">相册</a></li>
+            <li class="layui-nav-item"><a href="/about">关于</a></li>
+        </ul>
+        <p class="welcome-text">
+            欢迎来到<span class="name">光子同学</span>的博客~
+        </p>
+    </div>
+<!--    <div class="layui-carousel" id="test1" lay-filter="test1" style="left:300px;height: 300px">-->
+<!--        <div carousel-item="">-->
+<!--    <div align="center" style="transform:scale(0.4)"><img src="../static/res/img/index.jpg"></div>-->
+<!--            <div><img src="../static/res/img/index.jpg"></div>-->
+<!--            <div><img src="../static/res/img/index.jpg"></div>-->
+<!--            <div><img src="../static/res/img/index.jpg"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+    <div class="content" style="padding: 0px;">
+
+        <div class="cont w1000">
+<!--            <div class="title">-->
+<!--        <span class="layui-breadcrumb" lay-separator="|">-->
+<!--          <a href="javascript:;" class="active">言情</a>-->
+<!--          <a href="javascript:;">科幻</a>-->
+<!--          <a href="javascript:;">人生</a>-->
+<!--        </span>-->
+<!--            </div>-->
+            <div class="list-item">
+                <div id="music">
+                    <div id="container">
+                        <h3 id="musicName">一月，银装轻舞-紫竹笛韵</h3>
+                        <img src="../static/res/audio/image/一月，银装轻舞-紫竹笛韵.jpg" id="musicImg">
+                        <audio src="../static/res/audio/music/1.mp3" controls id="audio"></audio>
+                        <div class="btn">
+                            <button id="play">play</button>
+                            <button id="pause">pause</button>
+                            <button id="prev">prev</button>
+                            <button id="next">next</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="margin-bottom: 65px;margin-top: -530px">
+                    <div class="layui-fluid">
+                        <div class="layui-row">
+                            <div class="layui-col-xs12 layui-col-sm4 layui-col-md5" style="width: auto;">
+                                <div class="img"><img src="../static/res/img/books/1.jpg" alt=""></div>
+                            </div>
+                            <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                                <div class="item-cont">
+                                    <h3>82年生的金智英
+                                        <button class="layui-btn layui-btn-danger new-icon">new</button>
+                                    </h3>
+                                    <h5>[韩]赵南柱</h5>
+                                    <p style="-webkit-line-clamp:initial;">
+                                        这个社会看似改变了很多，可是仔细窥探内部细则和约定俗成，便会发现其实还是固守着旧习，所以就结果而论，应该说这个社会根本没有改变。
+                                        <a href="/details" class="go-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="margin-bottom: 65px">
+                    <div class="layui-fluid">
+                        <div class="layui-row">
+                            <div class="layui-col-xs12 layui-col-sm4 layui-col-md5" style="width: auto;">
+                                <div class="img"><img src="../static/res/img/books/2.jpg" alt=""></div>
+                            </div>
+                            <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                                <div class="item-cont">
+                                    <h3>你当像鸟飞往你的山
+                                        <button class="layui-btn layui-btn-danger new-icon">new</button>
+                                    </h3>
+                                    <h5>[美] 塔拉·韦斯特弗</h5>
+                                    <p style="-webkit-line-clamp:initial;">
+                                        283 无论你成为谁，无论你把自己变成了什么，那就是你本来的样子。它一直在你心中。不是在剑桥，而是在于你自已。你就是黄金。回到杨百翰大学......
+                                        <a href="/details" class="go-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="margin-bottom: 65px">
+                    <div class="layui-fluid">
+                        <div class="layui-row">
+                            <div class="layui-col-xs12 layui-col-sm4 layui-col-md5" style="width: auto;">
+                                <div class="img"><img src="../static/res/img/books/3.jpg" alt=""></div>
+                            </div>
+                            <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                                <div class="item-cont">
+                                    <h3>书店日记
+                                        <button class="layui-btn layui-btn-danger new-icon">new</button>
+                                    </h3>
+                                    <h5>[英] 肖恩·白塞尔</h5>
+                                    <p style="-webkit-line-clamp:initial;">
+                                        别以为二手书商的世界是一曲田园牧歌一一炉火烧得很旺，你坐在扶手椅上，搁起穿着拖鞋的脚，一边抽烟斗一边读吉本的《罗马帝国衰亡史》，与此同时......
+                                        <a href="/details" class="go-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="margin-bottom: 65px">
+                    <div class="layui-fluid">
+                        <div class="layui-row">
+                            <div class="layui-col-xs12 layui-col-sm4 layui-col-md5" style="width: auto;">
+                                <div class="img"><img src="../static/res/img/books/4.jpg" alt=""></div>
+                            </div>
+                            <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                                <div class="item-cont">
+                                    <h3>时间的秩序
+                                        <button class="layui-btn layui-btn-danger new-icon">new</button>
+                                    </h3>
+                                    <h5>[意] 卡洛·罗韦利</h5>
+                                    <p style="-webkit-line-clamp:initial;">
+                                        我停下来，什么也不做。什么也没有发生。我什么也不去想。我聆听时间的流逝。 这就是时间，熟悉又亲密。我们任它带领。秒、时、年的洪流将我们投向生命......
+                                        <a href="/details" class="go-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="margin-bottom: 65px">
+                    <div class="layui-fluid">
+                        <div class="layui-row">
+                            <div class="layui-col-xs12 layui-col-sm4 layui-col-md5" style="width: auto;">
+                                <div class="img"><img src="../static/res/img/books/5.jpg" alt=""></div>
+                            </div>
+                            <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                                <div class="item-cont">
+                                    <h3>OPUS 作品
+                                        <button class="layui-btn layui-btn-danger new-icon">new</button>
+                                    </h3>
+                                    <h5>[日] 今敏</h5>
+                                    <p style="-webkit-line-clamp:initial;">
+                                        这部“OPUS"从1995年10月到翌年6月在学习研究社旗下漫画杂志COMCGUS上连载，是今敏最后一部长篇漫画。这部作品有意模糊了应构与现实的界限可以说是他日后导演作品的一个维形......
+                                        <a href="/details" class="go-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="demo" style="text-align: center;"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var play = document.getElementById('play'),
+        pause = document.getElementById('pause'),
+        prev = document.getElementById('prev'),
+        next = document.getElementById('next'),
+        musicName = document.getElementById('musicName'),
+        musicImg = document.getElementById('musicImg'),
+        bgImage = document.getElementById('music');
+
+    var music = new Array();
+    music = ['一月，银装轻舞-紫竹笛韵','二月，莺飞草长-紫竹笛韵','三月，桃沐春风-紫竹笛韵','四月，初雨微凉-紫竹笛韵','五月，和风微醺-紫竹笛韵','六月，晴雨流转-紫竹笛韵','七月，蝉鸣月色-紫竹笛韵','八月，盛夏未央-紫竹笛韵','九月，一叶知秋-紫竹笛韵','十月，霪雨缠绵-紫竹笛韵','十一月，深秋叙-紫竹笛韵','十二月，初雪诉-紫竹笛韵','神龙（Loong）-紫竹笛韵'];
+    var len = music.length;
+    var num = 0;
+
+    // 播放
+    play.onclick = function(){
+        if(audio.paused){
+            audio.play();
+        }
+    }
+
+    // 暂停
+    pause.onclick = function(){
+        if(audio.played){
+            audio.pause();
+        }
+    }
+
+    // 上一首
+    prev.onclick = function(){
+        num = (num + len - 1) % len;
+        audio.src = '../static/res/audio/music/' + music[num] + '.mp3';
+        musicName.innerHTML = music[num];
+        bgImage.style.backgroundImage = 'url(../static/res/audio/image/' + music[num] + '.jpg)';
+        musicImg.src = '../static/res/audio/image/' + music[num] + '.jpg';
+        audio.play();
+    }
+
+    // 下一首
+    next.onclick = function(){
+        num = (num + 1) % len;
+        audio.src = '../static/res/audio/music/' + music[num] + '.mp3';
+        musicName.innerHTML = music[num];
+        bgImage.style.backgroundImage = 'url(../static/res/audio/image/' + music[num] + '.jpg)';
+        musicImg.src = '../static/res/audio/image/' + music[num] + '.jpg';
+        audio.play();
+    }
+
+    // 自动切换下一首
+    audio.addEventListener('ended',function(){
+        next.onclick();
+    },false);
+    function play() {
+        var music = document.getElementById("audio");
+        //判断如果音乐停止播放中，就让他播放。。。
+        if (music.paused) {
+            music.paused = false;
+            music.play();
+        }
+    }
+    //调用函数
+    setInterval(play(), 1);
+</script>
+<script>
+    var canvas1 = document.getElementById('demo-canvas');
+    var context = canvas1.getContext('2d');
+    //初始化的树
+    // drawtree(context, 300, 700, 200, -Math.PI / 2, 12, 12);
+    //context.fill();
+    document.getElementById('hq').style.backgroundImage = 'url("' + context.canvas.toDataURL() + '")';
+</script>
+<script src="../static/res/bubble/js/rAF.js"></script>
+<script src="../static/res/bubble/js/demo-2.js"></script>
+<script src="http://www.yyyweb.com/demo/common/jquery.min.js"></script>
+<script type="text/javascript">
+
+    !function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);
+
+</script>
+</body>
+</html>
