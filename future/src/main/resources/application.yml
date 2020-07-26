@@ -12,3 +12,39 @@ spring:
         static-locations: classpath:/templates/,classpath:/static/
     mvc:
         static-path-pattern: /static/**
+        date-format: yyyy-MM-dd HH:mm:ss
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://120.53.123.93:3306/future?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&&useSSL=false
+        username: root
+        password: 123456
+        type: com.zaxxer.hikari.HikariDataSource
+        hikari:
+            minimum-idle: 5
+            maximum-pool-size: 128
+            auto-commit: true
+            idle-timeout: 30000
+            max-lifetime: 1800000
+            connection-timeout: 30000
+            connection-test-query: SELECT 1
+    jackson:
+        date-format: yyyy-MM-dd HH:mm:ss
+        serialization:
+            indent_output: false
+            fail_on_empty_beans: false
+        default-property-inclusion: NON_EMPTY
+        deserialization:
+            fail_on_unknown_properties: false
+        parser:
+            allow_unquoted_control_chars: true
+            allow_single_quotes: true
+
+
+mybatis:
+    mapper-locations: classpath*:mapper/*.xml
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: false
+    supportMethodsArguments: true
+    params: pageNum=pageNum;pageSize=pageSize;count=countSql;reasonable=reasonable;pageSizeZero=pageSizeZero
