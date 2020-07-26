@@ -1,3 +1,8 @@
+/Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/service/impl/CommonApiServiceImpl.java
 /Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/FutureApplication.java
-/Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/controller/Index.java
+/Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/controller/CommonApiController.java
 /Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/config/ApplicationConfig.java
+/Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/dao/GuestCommentMapper.java
+/Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/model/GuestComment.java
+/Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/service/CommonApiService.java
+/Users/hq/IdeaProjects/spring-boot-study/future/src/main/java/com/hq/future/controller/IndexController.java

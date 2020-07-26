@@ -80,6 +80,6 @@
     where id = #{id,jdbcType=VARCHAR}
   </update>
   <select id="getGuestComment" parameterType="list" resultMap="BaseResultMap">
-    select <include refid="Base_Column_List"/> from guest_comment
+    select <include refid="Base_Column_List"/> from guest_comment order by create_time desc
   </select>
 </mapper>

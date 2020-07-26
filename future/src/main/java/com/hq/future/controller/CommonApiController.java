@@ -3,25 +3,26 @@ package com.hq.future.controller;
 import com.hq.future.model.GuestComment;
 import com.hq.future.service.CommonApiService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
+@RequestMapping("/comment")
 public class CommonApiController {
     @Autowired
     CommonApiService commonApiService;
 
-    @PostMapping
-    void saveComment(GuestComment guestComment){
+    @PostMapping("/save")
+    void saveComment(HttpServletRequest request,@RequestBody GuestComment guestComment){
         commonApiService.saveGuestComment(guestComment);
     }
 
-    @GetMapping
-    List<GuestComment> selectComment(){
-        return commonApiService.getGuestComment();
+    @GetMapping("/get")
+    List<GuestComment> getGuestComment(){
+        List<GuestComment> list = commonApiService.getGuestComment();
+        return list;
     }
 
 }
