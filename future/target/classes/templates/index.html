@@ -1,66 +1,79 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <meta charset="utf-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="../static/res/layui/css/layui.css" media="all">
+<meta charset="UTF-8">
+<title>夏</title>
+
+<link rel="stylesheet" href="../static/res/firstPage/css/style.css">
+  <script src="../static/res/firstPage/js/script.js"></script>
+
 </head>
+<style type="text/css">
+  .loginBtnDiv {
+    float: right;
+    padding-right: 50px;
+    padding-top: 10px;
+  }
+
+.loginBtn{
+  display: -webkit-box;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-style: none;
+  color: #FFFFFF;
+  background-color: #FF6600;
+  border: 1px #FF6600 solid;
+  line-height: 20px;
+  /*设置鼠标移动到按钮上编变成小手*/
+  cursor: pointer;
+  /*设置按钮的内发光效果*/
+  -webkit-box-shadow: inset 0px 0px 5px #fff;
+  -moz-box-shadow: inset 0px 0px 5px #fff;
+  box-shadow: inset 0px 0px 5px #fff;
+  /*设置按钮为圆角*/
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+</style>
 <body>
-<div style="background-color: #ffbbb1;height: 1000px" id="bgk">
-</div>
-    <div class="layui-carousel" id="test1" lay-filter="test1" style="text-align: center;margin: 0 auto;margin-top:-920px;">
-        <div carousel-item="">
-            <div><img src="../static/res/img/index/first.jpg"></div>
-            <div><img src="../static/res/img/index/second.jpg"></div>
-            <div><img src="../static/res/img/index/third.jpg"></div>
-            <div><img src="../static/res/img/index/forth.jpg"></div>
-            <div><img src="../static/res/img/index/fifth.jpg"></div>
-        </div>
+
+<main class="container">
+  <h3 class="page-title" style="left:30px;top:20px"><button type="button" class="loginBtn" onclick="javascript:window.location.href='/index2'">进入首页</button></h3>
+  <section class="slideshow">
+    <div class="slide">
+      <h1 class="slide-title">壹</h1>
     </div>
-    <div style="text-align: right;margin-right: 80px;height: 10%">
-        <button type="button" class="layui-btn layui-btn-warm layui-btn-radius" onclick="javascript:window.location.href='/index2'">进入首页</button>
+    <div class="slide">
+      <h1 class="slide-title">贰</h1>
     </div>
+    <div class="slide">
+      <h1 class="slide-title">叁</h1>
+    </div>
+    <div class="slide">
+      <h1 class="slide-title">肆</h1>
+    </div>
+    <div class="slide">
+      <h1 class="slide-title">伍</h1>
+    </div>
+  </section>
+  <section class="bars">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </section>
+  <ul class="nav-dots">
+    <li class="dot"><a href="#"></a></li>
+    <li class="dot"><a href="#"></a></li>
+    <li class="dot"><a href="#"></a></li>
+    <li class="dot"><a href="#"></a></li>
+    <li class="dot"><a href="#"></a></li>
+  </ul>
+</main>
 
+<script  src="../static/res/firstPage/js/script.js"></script>
 
-<!-- 条目中可以是任意内容，如：<img src=""> -->
-
-<script src="../static/res/layui/layui.js"></script>
-<script>
-    layui.use('carousel', function(){
-        var carousel = layui.carousel;
-        //建造实例
-        carousel.render({
-            elem: '#test1'
-            ,width: '1200px'
-            ,height: '800px'
-            ,top: '200px'
-            ,interval: 2000 //每2秒，自动轮播
-            ,arrow: 'always'
-        });
-
-        //监听轮播切换事件
-        carousel.on('change(test1)', function(obj){ //test1来源于对应HTML容器的 lay-filter="test1" 属性值
-            console.log(obj.index); //当前条目的索引
-            console.log(obj.prevIndex); //上一个条目的索引
-            console.log(obj.item); //当前条目的元素对象
-        });
-
-    });
-    function index() {
-
-    };
-    // window.onload = function() {
-    //     console.log(document.body.clientHeight)
-    //     var bgk = document.getElementById("bgk");
-    //     bgk.style.height = document.body.clientHeight;
-    //     bgk.style.width = document.body.clientWidth;
-    // }
-</script>
-<script src="http://www.yyyweb.com/demo/common/jquery.min.js"></script>
-<script type="text/javascript">
-
-    !function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);
-
-</script>
 </body>
 </html>
